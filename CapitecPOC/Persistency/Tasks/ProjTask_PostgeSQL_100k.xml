@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<DataConversion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ProjTask_PostgeSQL_100k</Name>
+  <Parent>POC_Projections</Parent>
+  <Previous>ProjTask_PostgeSQL_10000</Previous>
+  <LastModifiedBy>guy</LastModifiedBy>
+  <LastModifiedOn>2025-10-31T09:51:43.9931478+00:00</LastModifiedOn>
+  <CreatedBy>guy</CreatedBy>
+  <CreatedOn>2025-10-31T09:51:43.9931478+00:00</CreatedOn>
+  <Key>ProjTask_PostgeSQL_100k</Key>
+  <Folder>false</Folder>
+  <LastModified>2025-10-31T09:51:43.9931478+00:00</LastModified>
+  <Notes />
+  <OpeningInformation />
+  <IsExpanded>true</IsExpanded>
+  <Type>Indiv</Type>
+  <UseDefaultFolder>true</UseDefaultFolder>
+  <UseDataSource>false</UseDataSource>
+  <DebugInfo>true</DebugInfo>
+  <ReThrowException>true</ReThrowException>
+  <ExceptionWriteMax>20</ExceptionWriteMax>
+  <ExceptionAbortMax>1000</ExceptionAbortMax>
+  <EnableDebugRecordId>false</EnableDebugRecordId>
+  <DebugRecordId />
+  <TableSplitDelimiter>_</TableSplitDelimiter>
+  <WorkerPCs>false</WorkerPCs>
+  <MultiThreaded>false</MultiThreaded>
+  <IsHpcRun>false</IsHpcRun>
+  <ThreadsEvenSplit>true</ThreadsEvenSplit>
+  <ParallelSplits>2</ParallelSplits>
+  <Threads>8</Threads>
+  <SequentialStartUp>false</SequentialStartUp>
+  <ProcessResultsOnMaster>true</ProcessResultsOnMaster>
+  <NumberOfWorkers>0</NumberOfWorkers>
+  <StartUpDelay>0</StartUpDelay>
+  <BackupAfterRun>false</BackupAfterRun>
+  <IncludeResultsInBackup>false</IncludeResultsInBackup>
+  <PackageVersion>0.0.0.3</PackageVersion>
+  <RevisionIds>
+    <item>
+      <key>
+        <int>1</int>
+      </key>
+      <value>
+        <string>cde65eb7-5f11-4e39-8ce8-dc87475c8840</string>
+      </value>
+    </item>
+    <item>
+      <key>
+        <int>2</int>
+      </key>
+      <value>
+        <string>fd65012f-59db-4960-a20b-b16fac12fd99</string>
+      </value>
+    </item>
+    <item>
+      <key>
+        <int>3</int>
+      </key>
+      <value>
+        <string>0f1573c2-00fd-4946-afb9-cd3d4ea1ae60</string>
+      </value>
+    </item>
+  </RevisionIds>
+  <MaxRunDuration>0</MaxRunDuration>
+  <ModelName>Disc_CF_Model</ModelName>
+  <Basis>ProjTask_PostgeSQL_100k</Basis>
+  <InputsTable>
+    <Name>ProjectionTask_Inputs</Name>
+    <Parent />
+    <Previous />
+    <LastModifiedBy>guy</LastModifiedBy>
+    <LastModifiedOn>2025-10-31T09:51:43.9931478+00:00</LastModifiedOn>
+    <CreatedBy>guy</CreatedBy>
+    <CreatedOn>2025-10-31T09:51:43.9931478+00:00</CreatedOn>
+    <Folder>false</Folder>
+    <LastModified>2025-10-31T09:51:43.9931478+00:00</LastModified>
+    <Notes />
+    <OpeningInformation />
+    <IsExpanded>true</IsExpanded>
+    <IsProjectTable>false</IsProjectTable>
+    <IsDataSource>false</IsDataSource>
+    <IsODBCSource>false</IsODBCSource>
+    <IsWebDataSource>false</IsWebDataSource>
+    <IsDatFileSource>false</IsDatFileSource>
+    <IsDatabaseConnection>false</IsDatabaseConnection>
+    <WebDataSourceIsAdvanced>false</WebDataSourceIsAdvanced>
+    <FilePath>PostgreSQL_local</FilePath>
+    <Schema />
+    <Reference>policies100000</Reference>
+    <Delimiter>	</Delimiter>
+    <Internal>false</Internal>
+    <LookUpType>RowAndCol</LookUpType>
+    <BasisTable>false</BasisTable>
+    <IndexCols>1</IndexCols>
+    <DoubleType>true</DoubleType>
+    <Rows>2</Rows>
+    <Cols>48</Cols>
+    <HasHeadings>true</HasHeadings>
+    <RunControlTable>false</RunControlTable>
+  </InputsTable>
+  <CopyProperties />
+  <InputOverrides>true</InputOverrides>
+  <ParameterOverrides>false</ParameterOverrides>
+  <ReadFromFileIfAvailable>false</ReadFromFileIfAvailable>
+  <ProjectionInputs>
+    <ProjectionInput>
+      <Name>GRP_ID</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>policy_id</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>PRODUCT</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>product</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>INCPT_DT</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>incpt_dt</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>UW_LOAD_PC</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>uw_load_pc</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>PRM_PA</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>prm_pa</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>SA_LS</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>sa_ls</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>SA_INST</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>sa_inst</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>SA_TR</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>sa_tr</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>RI_T1_SA</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>ri_t1_sa</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>RI_T2_SA</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>ri_t2_sa</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>I17_GRP</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>i17_grp</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>BRTH_DT</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>brth_dt</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>SMK</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>smk</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>RF_RSK</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>rf_rsk</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>SEX</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>sex1</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+  </ProjectionInputs>
+  <Dynamic>false</Dynamic>
+  <UseDynamicAttributes>false</UseDynamicAttributes>
+  <ColumnOutputTotals>true</ColumnOutputTotals>
+  <ColumnOutputStart>0</ColumnOutputStart>
+  <ColumnOutputEnd>24</ColumnOutputEnd>
+  <ColumnSumTotals>true</ColumnSumTotals>
+  <ColumnSumStart>0</ColumnSumStart>
+  <ColumnSumEnd>24</ColumnSumEnd>
+  <PerRecordResults>true</PerRecordResults>
+  <SuppressRecordIndices>false</SuppressRecordIndices>
+  <CustomRecordOutput>PRODUCT, GRP_ID, Net_Res_e, RIClaimRec_PV_e, RIPrem_PV_e, Res_e, NatDthBen_PV_e, AccDthBen_PV_e, TotExp_PV_e, NBPremWOP_PV_e, Prem_PV_e, PremRec_PV_e, AccDeathBenAnn, AccDeathBenLS, AccDeathBenTR, AccDthBenTotal, AccProbBirthWOP, ActAnnInflRate, AnnInflRate, AnnRIRate, BalDate, CancelRate, CancelRateFinal, CFEoM, CFSoM, DiscFac_mnth, DthBenTotal, DurIF, ExpAcq, ExpClaims, ExpInflAdj, ExpPremRec, ExpRenMain, FreeCovExGrat, I17ExpClaims, I17InitExp, I17RenExpTotal, InflAdjIndex, InflFac_mnth, InitDeathBenAnnPP, InitExp, IVP, LapseRate, LapseRateFinal, NatDeathBenAnn, NatDeathBenLS, NatDeathBenTR, NatDthBenTotal, NBWOPBen, NTURate, NTURateFinal, NumAccDeaths, NumCancels, NumLapses, NumNatDeaths, NumNewBornWOP, NumNTU, PeriodIF, Pol_Year, PremIncPP, PremIncPPAdj, PremIncPPIF, PremiumCollectPC, PremRecovery, ProjTerm, PropIF_e, RenExpTotal, RFRAnnNom, RFRAnnReal, RIAccDeathClaim, RIBenTotal, RIClaimsRec, RIClaimsRecPrePS, RINatDeathClaim, RINetCF, RIPremOutgo, RIPrmPrePS, RIPrmRate, RIProfitShare, SeasonalCancelAdj, SeasonalLapseAdj, ValMnth, ValYr</CustomRecordOutput>
+  <Delimiter>Tab</Delimiter>
+  <Targets />
+  <MaxTerm>1200</MaxTerm>
+  <CircularReferenceCheck>false</CircularReferenceCheck>
+  <ResetParamDefaults>false</ResetParamDefaults>
+  <SuppressVariableValidation>false</SuppressVariableValidation>
+  <ProjectionServicePackagePath>C:\Users\guy\Documents\Mo.net Projects\POC_ConventionalModelProject_v6\ProjTask_PostgeSQL_100k_ServicePackage_v7</ProjectionServicePackagePath>
+  <ApplyGrouping>false</ApplyGrouping>
+  <ApplySorting>false</ApplySorting>
+  <ApplyMergeTest>false</ApplyMergeTest>
+  <Threshold>0</Threshold>
+  <ThreshholdType>None</ThreshholdType>
+  <IsDataConversion>false</IsDataConversion>
+</DataConversion>

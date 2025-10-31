@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Tbl_FwdReal</Name>
+  <Parent>Interest Rate Tables</Parent>
+  <Previous>Tbl_FwdNom</Previous>
+  <LastModifiedBy>guy</LastModifiedBy>
+  <LastModifiedOn>2025-10-31T09:51:44.0001301+00:00</LastModifiedOn>
+  <CreatedBy>guy</CreatedBy>
+  <CreatedOn>2025-10-31T09:51:44.0001301+00:00</CreatedOn>
+  <Folder>false</Folder>
+  <LastModified>2025-10-31T09:51:44.0001301+00:00</LastModified>
+  <Notes>Valuation interest rate table</Notes>
+  <OpeningInformation />
+  <IsExpanded>true</IsExpanded>
+  <IsProjectTable>true</IsProjectTable>
+  <IsDataSource>false</IsDataSource>
+  <IsODBCSource>false</IsODBCSource>
+  <IsWebDataSource>false</IsWebDataSource>
+  <IsDatFileSource>false</IsDatFileSource>
+  <IsDatabaseConnection>false</IsDatabaseConnection>
+  <WebDataSourceIsAdvanced>false</WebDataSourceIsAdvanced>
+  <FilePath>InputManager</FilePath>
+  <Schema />
+  <Reference>Tbl_FwdReal_monet</Reference>
+  <Delimiter>	</Delimiter>
+  <Internal>false</Internal>
+  <LookUpType>RowAndCol</LookUpType>
+  <BasisTable>false</BasisTable>
+  <LookUpVars>ValYear,CalcBasis,Product</LookUpVars>
+  <IndexCols>1</IndexCols>
+  <DoubleType>true</DoubleType>
+  <Rows>1</Rows>
+  <Cols>1</Cols>
+  <HasHeadings>true</HasHeadings>
+  <RunControlTable>false</RunControlTable>
+</Table>

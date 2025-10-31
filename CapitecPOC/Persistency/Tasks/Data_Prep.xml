@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<DataConversion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Data_Prep</Name>
+  <Parent>GroupRun</Parent>
+  <Previous />
+  <LastModifiedBy>guy</LastModifiedBy>
+  <LastModifiedOn>2025-10-31T09:51:43.9811799+00:00</LastModifiedOn>
+  <CreatedBy>guy</CreatedBy>
+  <CreatedOn>2025-10-31T09:51:43.9811799+00:00</CreatedOn>
+  <Key>Data_prep</Key>
+  <Folder>false</Folder>
+  <LastModified>2025-10-31T09:51:43.9811799+00:00</LastModified>
+  <Notes />
+  <OpeningInformation />
+  <IsExpanded>true</IsExpanded>
+  <Type>Indiv</Type>
+  <UseDefaultFolder>false</UseDefaultFolder>
+  <UseDataSource>false</UseDataSource>
+  <ResultsFolder>C:\Users\KyawSoeThein\True South\Modelling - Mo.Net\Workspaces\Work in progress\Capitec\Life Cover POC\ConventionalModelProject\Inputs</ResultsFolder>
+  <FileName>PostETL_inputs</FileName>
+  <DebugInfo>true</DebugInfo>
+  <ReThrowException>true</ReThrowException>
+  <ExceptionWriteMax>20</ExceptionWriteMax>
+  <ExceptionAbortMax>1000</ExceptionAbortMax>
+  <EnableDebugRecordId>false</EnableDebugRecordId>
+  <TableSplitDelimiter>_</TableSplitDelimiter>
+  <WorkerPCs>false</WorkerPCs>
+  <MultiThreaded>false</MultiThreaded>
+  <IsHpcRun>false</IsHpcRun>
+  <ThreadsEvenSplit>true</ThreadsEvenSplit>
+  <ParallelSplits>0</ParallelSplits>
+  <Threads>0</Threads>
+  <SequentialStartUp>false</SequentialStartUp>
+  <ProcessResultsOnMaster>true</ProcessResultsOnMaster>
+  <NumberOfWorkers>0</NumberOfWorkers>
+  <StartUpDelay>0</StartUpDelay>
+  <BackupAfterRun>false</BackupAfterRun>
+  <IncludeResultsInBackup>false</IncludeResultsInBackup>
+  <RevisionIds />
+  <MaxRunDuration>0</MaxRunDuration>
+  <ModelName>Data_Prep</ModelName>
+  <Basis />
+  <InputsTable>
+    <Name>Data_Prep_Inputs</Name>
+    <Parent />
+    <Previous />
+    <LastModifiedBy>guy</LastModifiedBy>
+    <LastModifiedOn>2025-10-31T09:51:43.9811799+00:00</LastModifiedOn>
+    <CreatedBy>guy</CreatedBy>
+    <CreatedOn>2025-10-31T09:51:43.9811799+00:00</CreatedOn>
+    <Folder>false</Folder>
+    <LastModified>2025-10-31T09:51:43.9811799+00:00</LastModified>
+    <Notes />
+    <OpeningInformation />
+    <IsExpanded>true</IsExpanded>
+    <IsProjectTable>false</IsProjectTable>
+    <IsDataSource>false</IsDataSource>
+    <IsODBCSource>false</IsODBCSource>
+    <IsWebDataSource>false</IsWebDataSource>
+    <IsDatFileSource>false</IsDatFileSource>
+    <IsDatabaseConnection>false</IsDatabaseConnection>
+    <WebDataSourceIsAdvanced>false</WebDataSourceIsAdvanced>
+    <FilePath>Inputs\policies10.csv</FilePath>
+    <Schema />
+    <Reference />
+    <Delimiter>,</Delimiter>
+    <Internal>false</Internal>
+    <LookUpType>RowAndCol</LookUpType>
+    <BasisTable>false</BasisTable>
+    <IndexCols>1</IndexCols>
+    <DoubleType>true</DoubleType>
+    <Rows>2</Rows>
+    <Cols>3</Cols>
+    <HasHeadings>true</HasHeadings>
+    <RunControlTable>false</RunControlTable>
+  </InputsTable>
+  <CopyProperties />
+  <InputOverrides>true</InputOverrides>
+  <ParameterOverrides>false</ParameterOverrides>
+  <ReadFromFileIfAvailable>false</ReadFromFileIfAvailable>
+  <ProjectionInputs>
+    <ProjectionInput>
+      <Name>GRP_ID</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>POLICY_ID</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+    <ProjectionInput>
+      <Name>SEX</Name>
+      <LastModifiedOn xsi:nil="true" />
+      <CreatedOn xsi:nil="true" />
+      <Heading>SEX1</Heading>
+      <Value />
+      <Source>File / Table</Source>
+    </ProjectionInput>
+  </ProjectionInputs>
+  <Dynamic>false</Dynamic>
+  <UseDynamicAttributes>false</UseDynamicAttributes>
+  <ColumnOutputTotals>true</ColumnOutputTotals>
+  <ColumnOutputStart>0</ColumnOutputStart>
+  <ColumnOutputEnd>24</ColumnOutputEnd>
+  <ColumnSumTotals>false</ColumnSumTotals>
+  <ColumnSumStart>0</ColumnSumStart>
+  <ColumnSumEnd>24</ColumnSumEnd>
+  <PerRecordResults>true</PerRecordResults>
+  <SuppressRecordIndices>false</SuppressRecordIndices>
+  <CustomRecordOutput>BRTH_DT, GRP_ID, I17_GRP, INCPT_DT, PRM_PA, PRODUCT, RF_RSK, RI_T1_SA, RI_T2_SA, SA_INST, SA_LS, SA_TR, SEX, SMK, UW_LOAD_PC, Inception_date, Birthday_date</CustomRecordOutput>
+  <Delimiter>Comma</Delimiter>
+  <Targets />
+  <MaxTerm>1200</MaxTerm>
+  <CircularReferenceCheck>false</CircularReferenceCheck>
+  <ResetParamDefaults>false</ResetParamDefaults>
+  <SuppressVariableValidation>false</SuppressVariableValidation>
+  <ConvItems />
+  <ApplyGrouping>false</ApplyGrouping>
+  <ApplySorting>false</ApplySorting>
+  <ApplyMergeTest>false</ApplyMergeTest>
+  <Threshold>0</Threshold>
+  <ThreshholdType>Percent</ThreshholdType>
+  <IsDataConversion>true</IsDataConversion>
+</DataConversion>

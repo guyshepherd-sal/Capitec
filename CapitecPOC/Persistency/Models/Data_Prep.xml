@@ -1,0 +1,506 @@
+<?xml version="1.0"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Data_Prep</Name>
+  <Parent>Data ETL</Parent>
+  <Previous />
+  <LastModifiedBy>guy</LastModifiedBy>
+  <LastModifiedOn>2025-10-31T09:51:43.9163538+00:00</LastModifiedOn>
+  <CreatedBy>guy</CreatedBy>
+  <CreatedOn>2025-10-31T09:51:43.9163538+00:00</CreatedOn>
+  <Folder>false</Folder>
+  <LastModified>2025-10-31T09:51:43.9163538+00:00</LastModified>
+  <Notes />
+  <OpeningInformation />
+  <IsExpanded>true</IsExpanded>
+  <Inherit>false</Inherit>
+  <Declarations />
+  <UseDefaultExecuteCode>false</UseDefaultExecuteCode>
+  <Inputs>
+    <Input>
+      <Name>BRTH_DT</Name>
+      <Parent>Life</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9163538+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9163538+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9163538+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>19900712</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Benefit</Name>
+      <Parent />
+      <Previous>Premium</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9173518+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9173518+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9173518+00:00</LastModified>
+      <Notes>Inputs related to benefits under policy</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Death</Name>
+      <Parent>Benefit</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9173518+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9173518+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9173518+00:00</LastModified>
+      <Notes>Death benefit inputs</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>GRP_ID</Name>
+      <Parent>Policy</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9173518+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9173518+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9173518+00:00</LastModified>
+      <Notes>Model point identifier</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>101</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>I17_GRP</Name>
+      <Parent>Policy</Parent>
+      <Previous>UW_LOAD_PC</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9173518+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9173518+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9173518+00:00</LastModified>
+      <Notes>IFRS 17 grouping</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>2023_LifeCover_Other_I_CapitecLife</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>INCPT_DT</Name>
+      <Parent>Policy</Parent>
+      <Previous>PRODUCT</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9183499+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9183499+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9183499+00:00</LastModified>
+      <Notes>Date of policy commencement</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>20230228</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Life</Name>
+      <Parent />
+      <Previous>Reinsurance</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9183499+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9183499+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9183499+00:00</LastModified>
+      <Notes>Inputs specific to each life</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>PRM_PA</Name>
+      <Parent>Premium</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9183499+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9183499+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9183499+00:00</LastModified>
+      <Notes>Annual premium amount.  For single premiums this is the single premium, for all other premium frequencies this is the annual premium.</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>1,857.37</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>true</AllowNulls>
+    </Input>
+    <Input>
+      <Name>PRODUCT</Name>
+      <Parent>Policy</Parent>
+      <Previous>GRP_ID</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9183499+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9183499+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9183499+00:00</LastModified>
+      <Notes>Product Type: LIFE cover</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>LIFE</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Policy</Name>
+      <Parent />
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9183499+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9183499+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9183499+00:00</LastModified>
+      <Notes>Inputs specific to policy</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Premium</Name>
+      <Parent />
+      <Previous>Policy</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9193453+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9193453+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9193453+00:00</LastModified>
+      <Notes>Premium related inputs</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>RF_RSK</Name>
+      <Parent>Life</Parent>
+      <Previous>SMK</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9193453+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9193453+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9193453+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>8</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>RI_T1_SA</Name>
+      <Parent>Reinsurance</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9193453+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9193453+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9193453+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>120,000.00</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>RI_T2_SA</Name>
+      <Parent>Reinsurance</Parent>
+      <Previous>RI_T1_SA</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9193453+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9193453+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9193453+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0.00</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Reinsurance</Name>
+      <Parent />
+      <Previous>Benefit</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9203436+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9203436+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9203436+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>SA_INST</Name>
+      <Parent>Death</Parent>
+      <Previous>SA_LS</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9203436+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9203436+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9203436+00:00</LastModified>
+      <Notes>Death benefit sum assured, ie the amount of life cover provided, at policy commencement</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0.00</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>true</AllowNulls>
+    </Input>
+    <Input>
+      <Name>SA_LS</Name>
+      <Parent>Death</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9213414+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9213414+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9213414+00:00</LastModified>
+      <Notes>Death benefit sum assured, ie the amount of life cover provided, at policy commencement</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>200,000.00</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>true</AllowNulls>
+    </Input>
+    <Input>
+      <Name>SA_TR</Name>
+      <Parent>Death</Parent>
+      <Previous>SA_INST</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9213414+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9213414+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9213414+00:00</LastModified>
+      <Notes>Death benefit sum assured, ie the amount of life cover provided, at policy commencement</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0.00</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>true</AllowNulls>
+    </Input>
+    <Input>
+      <Name>SEX</Name>
+      <Parent>Life</Parent>
+      <Previous>RF_RSK</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9213414+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9213414+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9213414+00:00</LastModified>
+      <Notes>Gender (M,F)</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>F</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>SMK</Name>
+      <Parent>Life</Parent>
+      <Previous>BRTH_DT</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9213414+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9213414+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9213414+00:00</LastModified>
+      <Notes>Smoker status - Y (smoker), N (non-smoker), U (unknown)</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>N</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>UW_LOAD_PC</Name>
+      <Parent>Policy</Parent>
+      <Previous>INCPT_DT</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9223385+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9223385+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9223385+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>350.00</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+  </Inputs>
+  <Params />
+  <Formulae>
+    <Formula>
+      <Name>Birthday_date</Name>
+      <Parent />
+      <Previous>Inception_date</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9223385+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9223385+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9223385+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>' Check string length is correct
+If BRTH_DT.Length = 8 Then
+    Dim formattedDate As String = BRTH_DT.Substring(0, 4) &amp; "/" &amp; _
+                                  BRTH_DT.Substring(4, 2) &amp; "/" &amp; _
+                                  BRTH_DT.Substring(6, 2)
+    ' formattedDate = "2023/08/19"
+    Return formattedDate
+Else
+    ' Handle error or unexpected input
+    Return ""
+End If
+</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>Inception_date</Name>
+      <Parent />
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9223385+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9223385+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9223385+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>' Check string length is correct
+If INCPT_DT.Length = 8 Then
+    Dim formattedDate As String = INCPT_DT.Substring(0, 4) &amp; "/" &amp; _
+                                  INCPT_DT.Substring(4, 2) &amp; "/" &amp; _
+                                  INCPT_DT.Substring(6, 2)
+    ' formattedDate = "2023/08/19"
+    Return formattedDate
+Else
+    ' Handle error or unexpected input
+    Return ""
+End If
+</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+  </Formulae>
+  <Runs />
+</Model>

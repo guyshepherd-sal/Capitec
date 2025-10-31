@@ -1,0 +1,975 @@
+<?xml version="1.0"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Mortality</Name>
+  <Parent>Sub Models</Parent>
+  <Previous />
+  <LastModifiedBy>guy</LastModifiedBy>
+  <LastModifiedOn>2025-10-31T09:51:43.9672183+00:00</LastModifiedOn>
+  <CreatedBy>guy</CreatedBy>
+  <CreatedOn>2025-10-31T09:51:43.9672183+00:00</CreatedOn>
+  <Folder>false</Folder>
+  <LastModified>2025-10-31T09:51:43.9672183+00:00</LastModified>
+  <Notes>Calculates the mortality rates applicable to life x</Notes>
+  <OpeningInformation />
+  <IsExpanded>true</IsExpanded>
+  <Description>Mortality Submodel</Description>
+  <Inherit>false</Inherit>
+  <Declarations />
+  <UseDefaultExecuteCode>false</UseDefaultExecuteCode>
+  <Inputs>
+    <Input>
+      <Name>BRTH_DT</Name>
+      <Parent>Life</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9672183+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9672183+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9672183+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Date</DataType>
+      <Value>12/07/1990</Value>
+      <Format>dd/MM/yyyy</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>I17_GRP</Name>
+      <Parent>Policy</Parent>
+      <Previous>INCPT_DT</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9672183+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9672183+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9672183+00:00</LastModified>
+      <Notes>IFRS 17 grouping</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>2023_LifeCover_Other_I_CapitecLife</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>INCPT_DT</Name>
+      <Parent>Policy</Parent>
+      <Previous>PRODUCT</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9682152+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9682152+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9682152+00:00</LastModified>
+      <Notes>Date of policy commencement</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Date</DataType>
+      <Value>28/02/2023</Value>
+      <Format>dd/MM/yyyy</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Life</Name>
+      <Parent />
+      <Previous>Policy</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9682152+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9682152+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9682152+00:00</LastModified>
+      <Notes>Inputs specific to each life</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>PRODUCT</Name>
+      <Parent>Policy</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9682152+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9682152+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9682152+00:00</LastModified>
+      <Notes>Product Type: LIFE cover</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>LIFE</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Policy</Name>
+      <Parent />
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9682152+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9682152+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9682152+00:00</LastModified>
+      <Notes>Inputs specific to policy</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>RF_RSK</Name>
+      <Parent>Life</Parent>
+      <Previous>SMK</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.969213+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.969213+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.969213+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>8</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>SEX</Name>
+      <Parent>Life</Parent>
+      <Previous>RF_RSK</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.969213+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.969213+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.969213+00:00</LastModified>
+      <Notes>Gender (M,F)</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>F</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>SMK</Name>
+      <Parent>Life</Parent>
+      <Previous>BRTH_DT</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.969213+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.969213+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.969213+00:00</LastModified>
+      <Notes>Smoker status - Y (smoker), N (non-smoker), U (unknown)</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>N</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+  </Inputs>
+  <Params>
+    <Parameter>
+      <Name>Decrements</Name>
+      <Parent />
+      <Previous>Parent</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.969213+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.969213+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.969213+00:00</LastModified>
+      <Notes>Parameters specific to model decrements</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>Mortality</Name>
+      <Parent>Decrements</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9702111+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9702111+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9702111+00:00</LastModified>
+      <Notes>Mortality parameters</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>OmegaAge</Name>
+      <Parent>Mortality</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9702111+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9702111+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9702111+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>100</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>Parent</Name>
+      <Parent />
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9712086+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9712086+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9712086+00:00</LastModified>
+      <Notes>This parameter required to allow this submodel to pull through values from the parent model</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Model</DataType>
+      <Value>Disc_CF_Model</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>Tbl_Mort</Name>
+      <Parent>Mortality</Parent>
+      <Previous>Tbl_MrtSelBands</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9712086+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9712086+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9712086+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>TableDbl</DataType>
+      <Value>Tbl_Mort</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>Tbl_MrtRFRskScl</Name>
+      <Parent>Mortality</Parent>
+      <Previous>OmegaAge</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9712086+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9712086+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9712086+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>TableDbl</DataType>
+      <Value>Tbl_MrtRFRskScl</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>Tbl_MrtSeasonAdj</Name>
+      <Parent>Mortality</Parent>
+      <Previous>Tbl_Mort</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9712086+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9712086+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9712086+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>TableDbl</DataType>
+      <Value>Tbl_MrtSeasonAdj</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>Tbl_MrtSelBands</Name>
+      <Parent>Mortality</Parent>
+      <Previous>Tbl_MrtRFRskScl</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9722065+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9722065+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9722065+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>TableDbl</DataType>
+      <Value>Tbl_MrtSelBands</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>Tbl_TmpScl</Name>
+      <Parent>Mortality</Parent>
+      <Previous>Tbl_MrtSeasonAdj</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9722065+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9722065+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9722065+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>TableDbl</DataType>
+      <Value>Tbl_TmpScl</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+  </Params>
+  <Formulae>
+    <Formula>
+      <Name>AccMortBaseRate</Name>
+      <Parent>Accidental Mortality</Parent>
+      <Previous>AccMortRateFinal</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9722065+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9722065+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9722065+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>Return Math.Min(1, AccMortRate(t) * SeasonalAccMrtAdj(t) * (TempDeathRateAdj(t) / 100) * (Parent.PROP_EXPQ_PC / 100)) * (1 + Parent.UW_LOAD_PC / 100)</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>AccMortRate</Name>
+      <Parent>Accidental Mortality</Parent>
+      <Previous>SeasonalAccMrtAdj</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9722065+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9722065+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9722065+00:00</LastModified>
+      <Notes>Probability of life dying during month t</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>Dim SelectLU As String
+Dim SelectBand As String
+Dim SelectMortLU As String
+Dim MrtRFScl As Double
+Dim AccMrtRate As Double
+
+'Assume zero mortality until the later of valuation date and policy commencement date
+If t &lt;= Max(PeriodIF(), 0) Then Return 0
+
+SelectLU = String.Concat("Acc",SEX, SMK)
+SelectMortLU = String.Concat("Acc",SEX, SMK, AgeLast(t).ToString())
+
+If PeriodIF() &lt;= Tbl_MrtSelBands.Value(SelectLU, 1) Then 
+    SelectBand = "1"
+Else If PeriodIF() &lt;= Tbl_MrtSelBands.Value(SelectLU, 2) Then 
+    SelectBand = "2"
+Else 
+    SelectBand = "ultimate"
+End If
+
+MrtRFScl = Tbl_MrtRFRskScl.Value(RF_RSK) / 100
+AccMrtRate = Math.Min(Tbl_Mort.Value(SelectMortLU, SelectBand), 1)
+
+Return Math.Min(MrtRFScl * AccMrtRate, 1)</Value>
+      <Format>0.000000</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>AccMortRateFinal</Name>
+      <Parent>Accidental Mortality</Parent>
+      <Previous>AccMortRateFinalMth</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9732009+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9732009+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9732009+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>Return Math.Min(1, AccMortBaseRate(t) * (1 + Parent.DTH_STRESS_PC / 100))</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>AccMortRateFinalMth</Name>
+      <Parent>Accidental Mortality</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9732009+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9732009+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9732009+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If t &lt;= PeriodIF() Then
+    Return 0
+Else If AccMortRateFinal(t) = 1 Then
+    Return 1
+Else
+    Return 1 - (1 - Math.Min(1 - NatMortRateFinal(t), AccMortRateFinal(t))) ^ (1 / 12)
+End If</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>Accidental Mortality</Name>
+      <Parent>Decrements</Parent>
+      <Previous>Natural Mortality</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9732009+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9732009+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9732009+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>AgeAtEntry</Name>
+      <Parent>Policy</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9732009+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9732009+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9732009+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value> Return CDbl(DateSpan.TermInMonths(BRTH_DT, INCPT_DT))/12
+ </Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>AgeCurrent</Name>
+      <Parent>Policy</Parent>
+      <Previous>AgeAtEntry</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9741979+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9741979+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9741979+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If  AgeAtEntry() + Parent.DurIF(t) / 12 &gt; OmegaAge Then
+    Return OmegaAge
+Else
+    Return AgeAtEntry() + Parent.DurIF(t) / 12
+End If</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>AgeLast</Name>
+      <Parent>Policy</Parent>
+      <Previous>AgeCurrent</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9741979+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9741979+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9741979+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value> Return CInt(Math.Floor(AgeCurrent(t))) </Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>CalMonth</Name>
+      <Parent>Policy</Parent>
+      <Previous>Pol_Year</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9741979+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9741979+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9741979+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>Return Date.FromOADate(Parent.BalDate(t)).Month</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>Decrements</Name>
+      <Parent />
+      <Previous>Policy</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9741979+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9741979+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9741979+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>Mortality</Name>
+      <Parent>Decrements</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9741979+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9741979+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9741979+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>NatMortBaseRate</Name>
+      <Parent>Natural Mortality</Parent>
+      <Previous>NatMortRateFinal</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9752003+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9752003+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9752003+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If Parent.DurIF(t) &lt;= Parent.DTH_NAT_WP Then 
+    Return 0
+Else
+    Return Math.Min(1, NatMortRate(t) * SeasonalNatMrtAdj(t) * (TempDeathRateAdj(t) / 100) * (Parent.PROP_EXPQ_PC / 100)) * (1 + Parent.UW_LOAD_PC / 100)
+End If</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>NatMortRate</Name>
+      <Parent>Natural Mortality</Parent>
+      <Previous>SeasonalNatMrtAdj</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9752003+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9752003+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9752003+00:00</LastModified>
+      <Notes>Probability of life dying during month t</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>Dim SelectLU As String
+Dim SelectBand As String
+Dim SelectMortLU As String
+Dim MrtRFScl As Double
+Dim NatMrtRate As Double
+
+'Assume zero mortality until the later of valuation date and policy commencement date
+If t &lt;= Max(PeriodIF(), 0) Then Return 0
+
+SelectLU = String.Concat("Nat",SEX, SMK)
+SelectMortLU = String.Concat("Nat",SEX, SMK, AgeLast(t).ToString())
+
+If PeriodIF() &lt;= Tbl_MrtSelBands.Value(SelectLU, 1) Then 
+    SelectBand = "1"
+Else If PeriodIF() &lt;= Tbl_MrtSelBands.Value(SelectLU, 2) Then 
+    SelectBand = "2"
+Else 
+    SelectBand = "ultimate"
+End If
+
+MrtRFScl = Tbl_MrtRFRskScl.Value(RF_RSK) / 100
+NatMrtRate = Math.Min(Tbl_Mort.Value(SelectMortLU, SelectBand), 1)
+
+Return Math.Min(MrtRFScl * NatMrtRate, 1)</Value>
+      <Format>0.000000</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>NatMortRateFinal</Name>
+      <Parent>Natural Mortality</Parent>
+      <Previous>NatMortRateFinalMth</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9752003+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9752003+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9752003+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>Return Math.Min(1, NatMortBaseRate(t) * (1 + Parent.DTH_STRESS_PC / 100))</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>NatMortRateFinalMth</Name>
+      <Parent>Natural Mortality</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9752003+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9752003+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9752003+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If NatMortRateFinal(t) = 1 Then
+    Return 1
+Else
+    Return 1 - (1 - NatMortRateFinal(t)) ^ (1 / 12)
+End If
+</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>Natural Mortality</Name>
+      <Parent>Decrements</Parent>
+      <Previous>Mortality</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9761943+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9761943+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9761943+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>PeriodIF</Name>
+      <Parent>Policy</Parent>
+      <Previous>AgeLast</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9761943+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9761943+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9761943+00:00</LastModified>
+      <Notes>Complete months from policy commencement date to valuation date - read from parent model</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>'Number of complete months from policy commencement to valuation date
+Return Parent.PeriodIF</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+      <Link />
+    </Formula>
+    <Formula>
+      <Name>Pol_Year</Name>
+      <Parent>Policy</Parent>
+      <Previous>PeriodIF</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9761943+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9761943+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9761943+00:00</LastModified>
+      <Notes>Policy year - read from parent model</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>'Policy year, ie first 12 months from policy commencement = Pol_Year 1, next 12 months = Pol_Year 2
+Return Parent.Pol_Year(t)</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+      <Link />
+    </Formula>
+    <Formula>
+      <Name>Policy</Name>
+      <Parent />
+      <Previous>Projection</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9761943+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9761943+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9761943+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>ProjTerm</Name>
+      <Parent>Policy</Parent>
+      <Previous>CalMonth</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9771928+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9771928+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9771928+00:00</LastModified>
+      <Notes>Term of policy, from outset, in months - read from parent model</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>'Policy term, in months, chosen at outset
+Return Parent.ProjTerm</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+      <Link />
+    </Formula>
+    <Formula>
+      <Name>Projection</Name>
+      <Parent />
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9771928+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9771928+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-10-31T09:51:43.9771928+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>SeasonalAccMrtAdj</Name>
+      <Parent>Accidental Mortality</Parent>
+      <Previous>AccMortBaseRate</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.9771928+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.9771928+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.9771928+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>Return Tbl_MrtSeasonAdj.Value(CalMonth(t), "DTH_ACC")</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>SeasonalNatMrtAdj</Name>
+      <Parent>Natural Mortality</Parent>
+      <Previous>NatMortBaseRate</Previous>
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.978188+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.978188+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.978188+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>Return Tbl_MrtSeasonAdj.Value(CalMonth(t), "DTH_NAT")</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>TempDeathRateAdj</Name>
+      <Parent>Mortality</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.978188+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.978188+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.978188+00:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If t &lt;= Max(PeriodIF(), 0) Then Return 1
+
+Dim LU As Integer
+Dim x As Double
+
+LU = Math.Min(ValMnth(t), Tbl_TmpScl.Rows)
+
+Return Tbl_TmpScl.Value(LU)</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+    </Formula>
+    <Formula>
+      <Name>ValMnth</Name>
+      <Parent>Projection</Parent>
+      <Previous />
+      <LastModifiedBy>guy</LastModifiedBy>
+      <LastModifiedOn>2025-10-31T09:51:43.978188+00:00</LastModifiedOn>
+      <CreatedBy>guy</CreatedBy>
+      <CreatedOn>2025-10-31T09:51:43.978188+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-10-31T09:51:43.978188+00:00</LastModified>
+      <Notes>Policy year - read from parent model</Notes>
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>Return Parent.ValMnth(t)</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
+      <Link />
+    </Formula>
+  </Formulae>
+  <Runs />
+</Model>

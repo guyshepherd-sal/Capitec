@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<DataConversion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ProjTask_excellinked</Name>
+  <Parent>POC_Projections</Parent>
+  <Previous />
+  <LastModifiedBy>guy</LastModifiedBy>
+  <LastModifiedOn>2025-10-31T09:51:43.9901573+00:00</LastModifiedOn>
+  <CreatedBy>guy</CreatedBy>
+  <CreatedOn>2025-10-31T09:51:43.9901573+00:00</CreatedOn>
+  <Key>ProjectionTask</Key>
+  <Folder>false</Folder>
+  <LastModified>2025-10-31T09:51:43.9901573+00:00</LastModified>
+  <Notes />
+  <OpeningInformation />
+  <IsExpanded>true</IsExpanded>
+  <Type>Indiv</Type>
+  <UseDefaultFolder>true</UseDefaultFolder>
+  <UseDataSource>false</UseDataSource>
+  <DebugInfo>true</DebugInfo>
+  <ReThrowException>true</ReThrowException>
+  <ExceptionWriteMax>20</ExceptionWriteMax>
+  <ExceptionAbortMax>1000</ExceptionAbortMax>
+  <EnableDebugRecordId>false</EnableDebugRecordId>
+  <TableSplitDelimiter>_</TableSplitDelimiter>
+  <WorkerPCs>false</WorkerPCs>
+  <MultiThreaded>false</MultiThreaded>
+  <IsHpcRun>false</IsHpcRun>
+  <ThreadsEvenSplit>true</ThreadsEvenSplit>
+  <ParallelSplits>0</ParallelSplits>
+  <Threads>0</Threads>
+  <SequentialStartUp>false</SequentialStartUp>
+  <ProcessResultsOnMaster>true</ProcessResultsOnMaster>
+  <NumberOfWorkers>0</NumberOfWorkers>
+  <StartUpDelay>0</StartUpDelay>
+  <BackupAfterRun>false</BackupAfterRun>
+  <IncludeResultsInBackup>false</IncludeResultsInBackup>
+  <RevisionIds />
+  <MaxRunDuration>0</MaxRunDuration>
+  <ModelName>Disc_CF_Model</ModelName>
+  <Basis />
+  <InputsTable>
+    <Name>ProjectionTask_Inputs</Name>
+    <Parent />
+    <Previous />
+    <LastModifiedBy>guy</LastModifiedBy>
+    <LastModifiedOn>2025-10-31T09:51:43.9901573+00:00</LastModifiedOn>
+    <CreatedBy>guy</CreatedBy>
+    <CreatedOn>2025-10-31T09:51:43.9901573+00:00</CreatedOn>
+    <Folder>false</Folder>
+    <LastModified>2025-10-31T09:51:43.9901573+00:00</LastModified>
+    <Notes />
+    <OpeningInformation />
+    <IsExpanded>true</IsExpanded>
+    <IsProjectTable>false</IsProjectTable>
+    <IsDataSource>false</IsDataSource>
+    <IsODBCSource>false</IsODBCSource>
+    <IsWebDataSource>false</IsWebDataSource>
+    <IsDatFileSource>false</IsDatFileSource>
+    <IsDatabaseConnection>false</IsDatabaseConnection>
+    <WebDataSourceIsAdvanced>false</WebDataSourceIsAdvanced>
+    <FilePath>InputManager</FilePath>
+    <Schema />
+    <Reference>tblMpfs</Reference>
+    <Delimiter>	</Delimiter>
+    <Internal>false</Internal>
+    <LookUpType>RowAndCol</LookUpType>
+    <BasisTable>false</BasisTable>
+    <IndexCols>1</IndexCols>
+    <DoubleType>true</DoubleType>
+    <Rows>2</Rows>
+    <Cols>48</Cols>
+    <ColWidths>49;64;202;72;72;30;34;49;62;99;69;103;63;88;63;75;63;76;86;79;92;58;92;72;92;126;83;82;74;72;72;72;72;88;72;88;68;58;62</ColWidths>
+    <HasHeadings>true</HasHeadings>
+    <RunControlTable>false</RunControlTable>
+  </InputsTable>
+  <CopyProperties />
+  <InputOverrides>true</InputOverrides>
+  <ParameterOverrides>false</ParameterOverrides>
+  <ReadFromFileIfAvailable>false</ReadFromFileIfAvailable>
+  <ProjectionInputs />
+  <Dynamic>false</Dynamic>
+  <UseDynamicAttributes>false</UseDynamicAttributes>
+  <ColumnOutputTotals>true</ColumnOutputTotals>
+  <ColumnOutputStart>0</ColumnOutputStart>
+  <ColumnOutputEnd>24</ColumnOutputEnd>
+  <ColumnSumTotals>true</ColumnSumTotals>
+  <ColumnSumStart>0</ColumnSumStart>
+  <ColumnSumEnd>24</ColumnSumEnd>
+  <PerRecordResults>true</PerRecordResults>
+  <SuppressRecordIndices>false</SuppressRecordIndices>
+  <CustomRecordOutput>PRODUCT, GRP_ID, Net_Res_e, RIClaimRec_PV_e, RIPrem_PV_e, Res_e, NatDthBen_PV_e, AccDthBen_PV_e, TotExp_PV_e, NBPremWOP_PV_e, Prem_PV_e, PremRec_PV_e, AccDeathBenAnn, AccDeathBenLS, AccDeathBenTR, AccDthBenTotal, AccProbBirthWOP, ActAnnInflRate, AnnInflRate, AnnRIRate, BalDate, CancelRate, CancelRateFinal, CFEoM, CFSoM, DiscFac_mnth, DthBenTotal, DurIF, ExpAcq, ExpClaims, ExpInflAdj, ExpPremRec, ExpRenMain, FreeCovExGrat, I17ExpClaims, I17InitExp, I17RenExpTotal, InflAdjIndex, InflFac_mnth, InitDeathBenAnnPP, InitExp, IVP, LapseRate, LapseRateFinal, NatDeathBenAnn, NatDeathBenLS, NatDeathBenTR, NatDthBenTotal, NBWOPBen, NTURate, NTURateFinal, NumAccDeaths, NumCancels, NumLapses, NumNatDeaths, NumNewBornWOP, NumNTU, PeriodIF, Pol_Year, PremIncPP, PremIncPPAdj, PremIncPPIF, PremiumCollectPC, PremRecovery, ProjTerm, PropIF_e, RenExpTotal, RFRAnnNom, RFRAnnReal, RIAccDeathClaim, RIBenTotal, RIClaimsRec, RIClaimsRecPrePS, RINatDeathClaim, RINetCF, RIPremOutgo, RIPrmPrePS, RIPrmRate, RIProfitShare, SeasonalCancelAdj, SeasonalLapseAdj, ValMnth, ValYr</CustomRecordOutput>
+  <Delimiter>Comma</Delimiter>
+  <Targets />
+  <MaxTerm>1200</MaxTerm>
+  <CircularReferenceCheck>false</CircularReferenceCheck>
+  <ResetParamDefaults>false</ResetParamDefaults>
+  <SuppressVariableValidation>false</SuppressVariableValidation>
+  <ApplyGrouping>false</ApplyGrouping>
+  <ApplySorting>false</ApplySorting>
+  <ApplyMergeTest>false</ApplyMergeTest>
+  <Threshold>0</Threshold>
+  <ThreshholdType>None</ThreshholdType>
+  <IsDataConversion>false</IsDataConversion>
+</DataConversion>

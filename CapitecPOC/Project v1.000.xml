@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CapitecPOC</Name>
+  <LastModifiedBy>guy</LastModifiedBy>
+  <LastModifiedOn xsi:nil="true" />
+  <CreatedOn xsi:nil="true" />
+  <Folder>false</Folder>
+  <LastModified>2025-10-30T18:25:32.6001517+00:00</LastModified>
+  <Notes />
+  <OpeningInformation />
+  <IsExpanded>true</IsExpanded>
+  <CreateDate>2025-10-16T11:23:49.4809904+01:00</CreateDate>
+  <UserId>KyawSoeThein</UserId>
+  <AppVersion>6000</AppVersion>
+  <VersionNo>1.000</VersionNo>
+  <CompanyName>Software Alliance Limited</CompanyName>
+  <Logo>C:\Users\guy\Documents\Mo.net Projects\POC_ConventionalModelProject_v6\Logo\SAL Blue Logo.png</Logo>
+  <Documentation>C:\Users\guy\Documents\Mo.net Projects\POC_ConventionalModelProject_v6\Documentation\Mo.net_Sample_Projects_Conventional_Model_v1.03_User_Guide_v3.pdf</Documentation>
+  <DocumentationBackedUp>true</DocumentationBackedUp>
+  <CommitDate>0001-01-01T00:00:00</CommitDate>
+  <References />
+  <ExternalSourceControl>true</ExternalSourceControl>
+  <DisableLastModified>true</DisableLastModified>
+  <RevisionIds />
+  <CommitRef>e015f38</CommitRef>
+  <OpenAsReadOnly>false</OpenAsReadOnly>
+</Project>
